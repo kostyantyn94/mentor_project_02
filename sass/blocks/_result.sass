@@ -4,47 +4,51 @@
     border-radius: 32px
     background-image: linear-gradient(180deg, #7755ff 0%, #6943ff 0%, #2f2ce9 100%)
     padding: 39px 54px 64px 54px
+    grid-area: result
+    display: grid
+    grid-template-rows: 28px 38px 200px 28px 38px 18px minmax(60px, auto)
 
     &__title
+        grid-row: 1/2
         color: $transparent
         font-size: 24px
         font-weight: 700
         text-align: center
     &__circle
+        grid-row: 3/4
         margin: 0 auto
-        margin-top: 38px
-        padding-top: 10px
         width: 200px
         height: 200px
         background-image: linear-gradient(180deg, #4d21c9 0%, rgba(37, 33, 201, 0) 100%, rgba(37, 33, 201, 0) 100%)
         border-radius: 100%
-        display: flex
-        justify-content: center
-        align-items: center
-        span
+        display: grid
+        align-content: center
+    &__circle-score
+        color: #ffffff
+        font-weight: 700
+        text-align: center
+        display: grid
+        grid-template-rows: 72px 21px
+        row-gap: 4px
+        &-real
+            font-size: 72px
+            line-height: 72px
+        &-max
             opacity: 0.52
             color: $transparent
             font-size: 18px
-            font-weight: 700
-            text-align: left
-            line-height: 0px
-    &__circle-score
-        color: #ffffff
-        font-size: 72px
-        font-weight: 700
-        line-height: 30px
-        text-align: center
-    &__descr
-        margin-top: 28px
+            line-height: 18px
     &__descr-title
+        grid-row: 5/6
         color: #ffffff
         font-size: 32px
         font-weight: 700
         text-align: center
     &__descr-text
-        margin-top: 18px
+        grid-row: 7/8
         color: $transparent
         font-size: 18px
+        line-height: 18px
         font-weight: 500
         text-align: center
     
