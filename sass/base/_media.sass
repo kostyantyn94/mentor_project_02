@@ -1,8 +1,6 @@
 @media (max-width:  740px)
-    section
-        width: 100%
+    body
         display: block
-        height: 100vh
         padding: 15px
     .container
         width: 100%
@@ -16,7 +14,10 @@
         padding: 24px 57px 45px 58px
         border-top-left-radius: 0
         border-top-right-radius: 0
-        grid-template-rows: 21px 26px 140px 24px 28px 11px 37px
+        grid-template-rows: 21px 26px 140px 24px 28px 11px minmax(37px, auto)
+        &__title
+            font-size: 18px
+            line-height: 18px
         &__circle
             width: 140px
             height: 140px
@@ -24,10 +25,10 @@
         &__circle-score
                 &-real
                     font-size: 56px
-                    line-height: 56px
+                    line-height: 80px
                 &-max
                     font-size: 16px
-                    line-height: 16px
+                    line-height: 10px
         &__descr-title
             font-size: 24px
         &__descr-text
