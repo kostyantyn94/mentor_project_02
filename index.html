@@ -17,14 +17,14 @@
       <h1 class="result__title">Your Result</h1>
       <div class="result__circle">
         <div class="result__circle-score">
-          <div class="result__circle-score-real">76</div>
+          <div class="result__circle-score-real">0</div>
           <div class="result__circle-score-max">of 100</div>
         </div>
       </div>
-      <h2 class="result__descr-title">Great</h2>
-      <div class="result__descr-text">You scored higher than 65% of the people who have taken these tests.</div>
+      <h2 class="result__descr-title"></h2>
+      <div class="result__descr-text"></div>
     </div>
-    <div class="summary">
+    <div class="summary hidden">
       <h2 class="summary__title">Summary</h2>
       <div class="summary__bars">
         <div class="summary__bar">
@@ -54,7 +54,36 @@
       </div>
       <button class="summary__button">Continue</button>
     </div>
+    <div class="test">
+      <h2 class="test__title">Testing</h2>
+      <form action="#" class="test__bars">
+        <div class="test__bar">
+          <img src="images/icon-reaction.svg" alt="logo" class="test__logo">
+          <div class="test__item">Reaction</div>
+          <input class="test__score" required type="number"></input>
+        </div>
+        <div class="test__bar">
+          <img src="images/icon-memory.svg" alt="logo" class="test__logo">
+          <div class="test__item">Memory</div>
+          <input class="test__score" required type="number"></input>
+        </div>
+        <div class="test__bar">
+          <img src="images/icon-verbal.svg" alt="logo" class="test__logo">
+          <div class="test__item">Verbal</div>
+          <input class="test__score" required type="number"></input>
+        </div>
+        <div class="test__bar">
+          <img src="images/icon-visual.svg" alt="logo" class="test__logo">
+          <div class="test__item">Visual</div>
+          <input class="test__score" required type="number"></input>
+        </div>
+        <button class="test__button">Get result</button>
+      </form>
+    </div>
   </div>
+  </div>
+
+  <script src="js/script.js"></script>
 </body>
 
 </html>

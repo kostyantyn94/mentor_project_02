@@ -1,0 +1,76 @@
+.test
+    width: 368px
+    min-height: 512px
+    padding: 38px 40px 40px 46px
+    grid-area: summary
+    display: grid
+    grid-template-rows: 29px 30px 369px
+    &__title
+        grid-row: 1/2
+        color: #303b59
+        font-size: 24px
+        font-weight: 700
+    &__bars
+        grid-row: 3/4
+        display: grid
+        grid-template-rows: repeat(4, 56px) 9px 56px
+        gap: 16px
+    &__bar
+        width: 100%
+        height: 100%
+        border-radius: 12px
+        display: flex
+        padding: 20px
+        align-items: center
+        img
+            width: 20px
+            height: 20px
+        &:nth-child(1)
+            background-color: rgba(255, 85, 85, 0.05)
+            color: #ff5555
+            input
+                border: 1px solid red
+        &:nth-child(2)
+            background-color: rgba(255, 178, 30, 0.05)
+            color: #ffB21E
+            input
+                border: 1px solid orange
+        &:nth-child(3)
+            background-color: rgba(0, 187, 143, 0.05)
+            color: #00bb8f
+            input
+                border: 1px solid green
+        &:nth-child(4)
+            background-color: rgba(17, 37, 214, 0.05)
+            color: #1125d6
+            input
+                border: 1px solid blue
+    &__item
+        font-size: 18px
+        font-weight: 500
+        text-align: center
+        padding-left: 15px
+    &__score
+        width: 30%
+        border-radius: 10px
+        color: #303b59
+        font-size: 18px
+        font-weight: 700
+        text-align: center
+        margin-left: auto
+        span
+            opacity: 0.5
+        
+    &__button
+        grid-row: 6/7
+        width: 288px
+        height: 56px
+        border-radius: 128px
+        background-color: #303b59
+        color: #ffffff
+        font-size: 18px
+        font-weight: 700
+        border: none
+        cursor: pointer
+        &:active
+            background-image: linear-gradient(180deg, #7755ff 0%, #6943ff 0%, #2f2ce9 100%)
