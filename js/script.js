@@ -1,8 +1,6 @@
 const inputs = document.querySelectorAll('.test__score');
-console.log(inputs);
 
 const button = document.querySelector('.test__button');
-console.log(button)
 
 const results = document.querySelectorAll('.summary__score') 
 
@@ -11,7 +9,8 @@ let arr_results = Array.from(results);
 let count = 0;
 let sum = 0;
 
-button.onclick = function () {
+button.onclick = function (e) {
+    e.preventDefault();
     for (let item of inputs) {
             if(typeof(+item.value) != 'number' || item.value == ''){
                 alert("Error! Please enter the number between 0 and 100")
@@ -26,7 +25,6 @@ button.onclick = function () {
     for (let item of inputs) {
         sum += +item.value;
         arr_results[count].innerHTML = `${item.value} <span>/ 100</span>`
-        console.log(arr_results[count]);
         count++;
     }
 
