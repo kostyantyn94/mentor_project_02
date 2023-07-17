@@ -15,6 +15,7 @@ const button = document.querySelector('.test__button');
 
 const results = document.querySelectorAll('.summary__score');
 
+let sum = 0;
 
 button.onclick = function (e) {
     e.preventDefault();
@@ -27,9 +28,9 @@ button.onclick = function (e) {
             return
         }
 
-        globalState.results += +item.value;     
+        sum += +item.value;     
     }
-
+        globalState.results = Math.round(sum / 4);
         circle.innerHTML = globalState.results;
 
     if (globalState.results >= 0 && globalState.results <= 30) {
